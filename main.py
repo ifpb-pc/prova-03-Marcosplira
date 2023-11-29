@@ -1,8 +1,20 @@
-def q1(cidades):
-    return []
+def q1(idades):
+    resultado = []
+    for cidade, idades in idades.items():
+        if idades > 100: 
+            resultado.append(cidade)
+
+    return resultado
 
 def q2(lista1, lista2):
-    return []
+    resultado = 0 
+    for soma, n in (lista1, lista2):
+        listas = lista1 + lista2
+
+    for soma, n in lista1:
+        if n > 0: 
+            resultado += n      
+    return resultado
 
 def q3(valores):
     return [],[]
@@ -32,6 +44,7 @@ def main():
     lista2 = [-2, 10, -1, 6, -4, 9]
     resultado = q2(lista1, lista2)
     print("q2:", resultado)
+
 
 
 
